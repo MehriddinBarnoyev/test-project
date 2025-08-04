@@ -2,7 +2,6 @@ const userTable = document.getElementById('user-table-body');
 const userPosts = document.getElementById('post-list');
 const postCCommentsButton = document.getElementById('Post-comments-button');
 const commentsPart = document.getElementById('comments');
-console.log(postCCommentsButton);
 
 
 
@@ -39,7 +38,6 @@ const renderData = (data) => {
 const getUserPost = async (userId) => {
     try {
         const response = await axios.get(`https://jsonplaceholder.typicode.com/posts/${userId}`);
-        console.log(response.data);
         userPosts.innerHTML = '';
         commentsPart.innerHTML = ''
 
@@ -74,7 +72,6 @@ const getPostComments = async (postId) => {
                 `).join('')}
             </ul>
         `
-        console.log(res.data);
     } catch (error) {
         console.error('Error fetching user posts:', error);
 
