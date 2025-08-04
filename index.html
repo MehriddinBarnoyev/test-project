@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- link to axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js" defer></script>
+    <!-- link to bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- let's make beautiful user table with hovers with bootstrap -->
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">User List</h1>
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Username</th>
+            <th>Website</th>
+            <th>Address</th>
+          </tr>
+        </thead>
+        <tbody id="user-table-body"></tbody>
+      </table>
+      <!-- make here user posts -->
+      <div id="user-posts" class="mt-5 bg-secondary text-white mb-4" style="border: 0.5; border-radius: 10px;">
+        <h2 class="d-flex align-items-center justify-content-center ">User Posts</h2>
+        <div id="post-list" class="list-group ml-5">
+            <!-- <h4>UserId</h4> -->
+        </div>
+        <div id="comments">
+            <!-- <button class="btn btn-primary d-flex align-items-center justify-content-center" id="Post-comments-button">See comments</button>
+            <p>comment 1</p> -->
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
